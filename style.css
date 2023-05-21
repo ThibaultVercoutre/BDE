@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#banniere {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#banniere #banniere-images {
+    height: 100%;
+    position: relative;
+    object-fit: cover;
+    z-index: -15;
+    filter: brightness(0.7) grayscale(0.6);
+    animation: banner-change 35s infinite ease-in-out;
+    display: flex;
+    flex-direction: row;
+}
+#banniere #banniere-images img {
+    width: 100vw;
+    object-fit: cover;
+}
+
+@keyframes banner-change{
+    0% {
+        right: -200vw;
+        filter: brightness(0) grayscale(0.6);
+    }
+    20% {
+        right: -200vw;
+        filter: brightness(0.7) grayscale(0.6);
+    }
+    22.5% {
+        right: -100vw;
+        filter: brightness(0.7) grayscale(0.6);
+    }
+    24.5% {
+        right: -100vw;
+        filter: brightness(0.7) grayscale(0.6);
+    }
+    45% {
+        right: -100vw;
+        filter: brightness(0.7) grayscale(0.6);
+    }
+    47.5% {
+        right: 0vw;
+        filter: brightness(0.7) grayscale(0.6);
+    }
+    49.5% {
+        right: 0vw;
+        filter: brightness(0.7) grayscale(0.6);
+    }
+    70% {
+        right: 0vw;
+        filter: brightness(0.7) grayscale(0.6);
+    }
+    72.5% {
+        right: 100vw;
+        filter: brightness(0.7) grayscale(0.6);
+    }
+    74.5% {
+        right: 100vw;
+        filter: brightness(0.7) grayscale(0.6);
+    }
+    85.5% {
+        right: 100vw;
+        filter: brightness(0.7) grayscale(0.6);
+    }
+    88% {
+        right: 200vw;
+        filter: brightness(0.7) grayscale(0.6);
+    }
+    100% {
+        right: 200vw;
+        filter: brightness(0) grayscale(0.6);
+    }
+}
+
+#banniere h1 {
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 40px;
+    letter-spacing: 8px;
+    color: rgb(230,255,255);
+    text-shadow: 2px 2px 8px rgb(206, 206, 206);
+    color: rgb(233, 233, 233);
+    text-transform: uppercase;
+    margin-top: -14px;
+    text-align: center;
+    width: 90%;
+}
